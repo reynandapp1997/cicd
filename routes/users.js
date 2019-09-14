@@ -14,4 +14,10 @@ router.get('/reytama', (req, res, next) => {
   });
 });
 
+router.get('/abc', (req, res, next) => {
+  res.status(200).json({
+    user: 'abc'
+  });
+});
+
 module.exports = router;
