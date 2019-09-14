@@ -14,4 +14,12 @@ describe('User', () => {
                 done();
             });
     });
+    it('should return 200 status code', done => {
+        chai.request(server)
+            .get('/users/reytama')
+            .end((error, result) => {
+                expect(result.status).eql(200);
+                done();
+            });
+    });
 });
