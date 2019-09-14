@@ -26,7 +26,7 @@ describe('User', () => {
         chai.request(server)
             .get('/users/abc')
             .end((error, result) => {
-                expect(result.status).eql(500);
+                expect(result.status).eql(200);
                 done();
             });
     });
